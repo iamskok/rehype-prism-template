@@ -22,7 +22,7 @@
     "rehype-plugin",
     "syntax-highlighting",
     "prism",
-    "html"
+    "template-generator"
   ],
   "author": "Mapbox",
   "contributors": [

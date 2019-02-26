@@ -5,7 +5,7 @@
 [![NPM Version](https://img.shields.io/npm/v/@mapbox/rehype-prism.svg?style=flat)](https://www.npmjs.com/package/rehype-prism-template/)
 ![Node Version](https://img.shields.io/node/v/rehype-prism-template.svg?style=flat)
 
-[rehype](https://github.com/wooorm/rehype) plugin to highlight code blocks in HTML with [Prism] (via [refractor]) fork of mapbox/rehype-prism.
+[rehype](https://github.com/wooorm/rehype) plugin to highlight code blocks in HTML with [Prism] (via [refractor]) fork from [mapbox/rehype-prism](https://github.com/mapbox/rehype-prism).
 
 (If you would like to highlight code blocks with [highlight.js](https://github.com/isagalaev/highlight.js), instead, check out [rehype-highlight](https://github.com/wooorm/rehype-highlight).)
 
