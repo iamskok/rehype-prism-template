@@ -1,8 +1,6 @@
 # rehype-prism-teplate
 
 [![MIT License](https://img.shields.io/github/license/iamskok/rehype-prism-template.svg?style=flat)](https://github.com/imaskok/rehype-prism-template/blob/master/LICENSE)
-![Minzipped Size](https://img.shields.io/bundlephobia/minzip/iamskok/rehype-prism-template.svg?style=flat)
-[![NPM Version](https://img.shields.io/npm/v/iamskok/rehype-prism-template.svg?style=flat)](https://www.npmjs.com/package/rehype-prism-template/)
 ![Node Version](https://img.shields.io/node/v/rehype-prism-template.svg?style=flat)
 
 [rehype](https://github.com/wooorm/rehype) plugin to highlight code blocks in HTML with [Prism] (via [refractor]) fork from [mapbox/rehype-prism](https://github.com/mapbox/rehype-prism).
