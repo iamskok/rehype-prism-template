@@ -1,19 +1,18 @@
 # rehype-prism
 
-[![Build Status](https://travis-ci.org/mapbox/rehype-prism.svg?branch=master)](https://travis-ci.org/mapbox/rehype-prism)
-[![MIT License](https://img.shields.io/github/license/mapbox/rehype-prism.svg?style=flat)](https://github.com/mapbox/rehype-prism/blob/master/LICENSE)
+[![MIT License](https://img.shields.io/github/license/mapbox/rehype-prism.svg?style=flat)](https://github.com/imaskok/rehype-prism-template/blob/master/LICENSE)
 ![Minzipped Size](https://img.shields.io/bundlephobia/minzip/@mapbox/rehype-prism.svg?style=flat)
-[![NPM Version](https://img.shields.io/npm/v/@mapbox/rehype-prism.svg?style=flat)](https://www.npmjs.com/package/@mapbox/rehype-prism)
-![Node Version](https://img.shields.io/node/v/@mapbox/rehype-prism.svg?style=flat)
+[![NPM Version](https://img.shields.io/npm/v/@mapbox/rehype-prism.svg?style=flat)](https://www.npmjs.com/package/rehype-prism-template/)
+![Node Version](https://img.shields.io/node/v/rehype-prism-template.svg?style=flat)
 
-[rehype](https://github.com/wooorm/rehype) plugin to highlight code blocks in HTML with [Prism] (via [refractor]).
+[rehype](https://github.com/wooorm/rehype) plugin to highlight code blocks in HTML with [Prism] (via [refractor]) fork of mapbox/rehype-prism.
 
 (If you would like to highlight code blocks with [highlight.js](https://github.com/isagalaev/highlight.js), instead, check out [rehype-highlight](https://github.com/wooorm/rehype-highlight).)
 
 ## Installation
 
-```
-npm install @mapbox/rehype-prism
+```bash
+npm install rehype-prism-template
 ```
 
 ## API
@@ -56,7 +55,7 @@ Some examples of how you might do that:
 
 ```js
 const rehype = require('rehype');
-const rehypePrism = require('rehype-prism');
+const rehypePrism = require('rehype-prism-template');
 
 rehype()
   .use(rehypePrism)
@@ -66,7 +65,7 @@ rehype()
 ```js
 const unified = require('unified');
 const rehypeParse = require('rehype-parse');
-const rehypePrism = require('rehype-prism');
+const rehypePrism = require('rehype-prism-template');
 
 unified()
   .use(rehypeParse)
@@ -80,13 +79,30 @@ If you'd like to get syntax highlighting in Markdown, parse the Markdown (with r
 const unified = require('unified');
 const remarkParse = require('remark-parse');
 const remarkRehype = require('remark-rehype');
-const rehypePrism = require('rehype-prism');
+const rehypePrism = require('rehype-prism-template');
 
 unified()
   .use(remarkParse)
   .use(remarkRehype)
   .use(rehypePrism)
   .process(/* some markdown */);
+```
+
+## Registering languages
+
+By default `rehype-prism-template` includes [all language definitions] from refractor, though it's possible to set your custom 
+list of registered languages by generating a new template of `index.js`. It is as easy as going in the package's root 
+directory and specifing a list of languages:
+
+```bash
+cd /node_modules/rehype-prism
+yarn register python java ruby kotlin
+```
+
+To reset the template back where it registers all languages:
+
+```bash
+yarn register-all
 ```
 
 ## FAQ
