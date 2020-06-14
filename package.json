@@ -35,7 +35,7 @@
   "homepage": "https://github.com/iamskok/rehype-prism-template#readme",
   "dependencies": {
     "hast-util-to-string": "^1.0.0",
-    "refractor": "^2.6.2",
+    "refractor": "^3.0.0",
     "underscore": "^1.9.1",
     "unist-util-visit": "^2.0.0"
   },
